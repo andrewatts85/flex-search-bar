@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+<form action="#" method="post" id="searchBar">
+  <div class="row">
+    <div class="col">
+      
+      <input list="techCategories" placeholder="all" id="dropdown"/>
+      <datalist id="techCategories">
+        <option value="Desktops">
+        <option value="Laptops">
+        <option value="Servers">
+        <option value="Software">
+        <option value="Operating Systems">
+      </datalist>
+      
+      <!--
+      <select name="select">
+        <option value="all" selected>all</option>
+        <option value="desktops">desktops</option>
+        <option value="laptops">laptops</option>
+        <option value="servers">servers</option>
+        <option value="software">software</option>
+        <option value="operating systems">operating systems</option>
+      </select>
+      -->
+    </div>
+    <div class="col">
+      <input type="text" placeholder="search" onfocu="this.placeholder = ''" />
+    </div>
+    <div class="col">
+      <!-- <input type="submit" value="search" id="btn"> -->
+      <button><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</form>
+  
+    <script src="app.js"></script>
+  </body>
+</html>
