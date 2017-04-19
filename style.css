@@ -1,0 +1,76 @@
+body {
+  margin: 1em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+}
+
+.col:first-child {
+  border-right: .063em solid gainsboro;
+  flex-grow: 2.8;
+}
+
+#dropdown {
+  padding-left: .3em;
+  width: 100%;
+  
+}
+
+#searchBar {
+  /*border: .063em solid red;*/
+  max-width: 30em;
+  margin: 20% auto;
+  padding: .5em;
+  background-color: /*lightsteelblue*/ lightseagreen;
+  border-left: .063em solid lightseagreen;
+  /*border-radius: .2em;*/
+  overflow: hidden;
+}
+
+input {
+  box-sizing: border-box;
+  font-size: 1.23em;
+  border: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  /*border-radius: .2em 0 0 .2em;*/
+  padding-left: .3em;
+}
+
+/*
+#btn {
+  color: white;
+  background-color: steelblue;
+  width: 100%;
+  border-radius: 0 .2em .2em 0;
+}
+*/
+
+button {
+  color: white;
+  background-color: /*steelblue*/ silver;
+  width: 100%;
+  font-size: 1.23em;
+  border: none;
+  /*border-radius: 0 .2em .2em 0;*/
+}
+
+.col:nth-child(2) {
+  flex-grow: 8;
+}
+
+/*
+@media screen and (min-width: 400px) {
+	.row {
+    flex-direction: row;
+  }
+}
+*/
